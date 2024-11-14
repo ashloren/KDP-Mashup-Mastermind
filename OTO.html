@@ -1,0 +1,213 @@
+<style type="text/css">
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0056b3;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-info {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    color: #007BFF;
+    font-weight: 700;
+	font-size: 200%;
+}
+
+.product-info p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+	text-align:left;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e5c100;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-info {
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+}
+.video-wrapper {
+    position: relative;
+    width: 560px; /* Set your desired width */
+    height: 315px; /* Set your desired height */
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+</style>
+<script type="text/javascript">
+function playVideo() {
+    document.querySelector(".thumbnail").style.display = "none";
+    document.getElementById("youtube-video").style.display = "block";
+}
+
+
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDP Mashup Mastermind | Webinar Replay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">KDP Mashup Mastermind</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-info" id="home">
+            <h2></h2>
+			
+			<div class="video-wrapper" onclick="playVideo()">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tCmB2XhZnvU?si=WotH8b2AfhtOj_X3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+</div>
+
+			<img src="https://raw.githubusercontent.com/ashloren/the-casual-gamer/refs/heads/main/KDP_Mashup_box_backless-270x300.png">
+           
+<h3></h3>
+
+
+
+
+
+
+
+
+
+
+            <button class="cta-button">Get Replays for Only $10!</button>
+			<br><br><br><a href="">No thanks, just the main product</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Info Product. All rights reserved.</p>
+    </footer>
+</body>
+</html>
